@@ -28,13 +28,13 @@ html {
 }
 
 body {
-  max-width: 1200px;
   color: #212121;
   font-family: "Roboto", "Raleway", sans-serif;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .index {
   background-color: #fff;
@@ -44,13 +44,11 @@ body {
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   min-height: 80px;
-  display: flex;
   align-items: center;
 }
 .index .container {
-  display: flex;
   align-items: center;
-  width: 1200px;
+  display: flex;
 }
 .Web,
 .stat {
@@ -73,6 +71,7 @@ body {
 .index nav a {
   color: #212121;
   font-weight: 500;
+  display: flex;
 }
 ul,
 ol {
@@ -80,12 +79,14 @@ ol {
 }
 .list-menu {
   margin-right: 46px;
+  display: flex;
 }
 .list-nav {
   display: flex;
 }
 .list-nav a {
   text-decoration: none;
+  display: flex;
 }
 .list-nav a[href="index.html"] {
   margin-left: 94px;
@@ -93,6 +94,7 @@ ol {
 .list-nav a:visited {
   color: var(--text-black);
 }
+
 header .tel,
 header .mail {
   color: #757575;
@@ -108,10 +110,10 @@ header .mail {
   text-decoration: none;
   color: var(--text-grey);
   margin-left: 50px;
+  display: flex;
 }
 
 .main-container {
-  background-color: #2f303a;
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -121,6 +123,7 @@ header .mail {
   letter-spacing: 0.06em;
   padding-top: 200px;
   padding-bottom: 200px;
+  justify-content: space-between;
 }
 
 header .agency,
@@ -151,6 +154,9 @@ nav .portfolio:hover,
 nav .portfolio:focus {
   color: #2196f3;
 }
+.sec1{
+  background-color: #2f303a;
+}
 
 .sec1 .but {
   color: white;
@@ -170,9 +176,9 @@ nav .portfolio:focus {
 }
 .sec2,
 .lorem {
+  background-color: white;
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
-  padding: 0;
 }
 .section .but:hover {
   border-radius: 4px;
@@ -203,8 +209,12 @@ nav .portfolio:focus {
   line-height: 1.14;
   justify-content: space-between;
 }
+.sec3{
+  background-color: white;
+}
 
 .sec3 .about {
+  background-color: white;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
@@ -234,7 +244,6 @@ img {
 .list-images2 {
   display: flex;
   padding-left: 0;
-  margin-left: -30px;
   justify-content: space-between;
 }
 
@@ -247,21 +256,18 @@ img {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   text-align: center;
-  margin: 0;
 }
 .imagineA,
 .imagineB,
 .imagineC {
   border-radius: 0px;
 }
+
 .list-buttons {
   display: flex;
   justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-bottom: -8px;
-  padding-bottom: 50px;
 }
 
 .list-buttons .but1,
@@ -292,8 +298,9 @@ img {
 .section .but5:hover {
   background-color: #2196f3;
   color: #ffffff;
-  background: #2196f3;
   cursor: pointer;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+  0px 2px 1px rgb(0 0 0 / 20%);
 }
 .section .but1:focus,
 .section .but2:focus,
@@ -302,15 +309,16 @@ img {
 .section .but5:focus {
   background-color: #2196f3;
   color: #ffffff;
-  background: #2196f3;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+  0px 2px 1px rgb(0 0 0 / 20%);
   cursor: pointer;
 }
 .list-photos {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  padding-bottom: 20px;
+  justify-content: space-between;
 }
 
 .imagine1,
@@ -323,26 +331,39 @@ img {
 .imagine8,
 .imagine9 {
   background-color: #fff;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  justify-content: space-between;
   max-width: 370px;
   border-radius: 0px;
+  margin-bottom: 30px;
+}
+.imagine1:focus,
+.imagine2:focus,
+.imagine3:focus,
+.imagine4:focus,
+.imagine5:focus,
+.imagine6:focus,
+.imagine7:focus,
+.imagine8:focus,
+.imagine9:focus {
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
 }
 .list-photos figcaption {
+  padding-top: 10px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-radius: 0px;
-  margin: 0;
+  letter-spacing: 0.03em;
 }
-
+figcaption{
+  padding-top: 10px;
+}
 footer {
   background-color: var(--black);
   color: #fff;
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
-  /* padding-left: 215px; */
 }
 footer .container {
   padding-top: 60px;
