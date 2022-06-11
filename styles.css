@@ -19,7 +19,6 @@
 
 body {
   display: block;
-  margin: 8px;
 }
 
 html {
@@ -34,7 +33,6 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 .index {
   background-color: #fff;
@@ -45,6 +43,7 @@ body {
   border-bottom: 1px solid #ececec;
   min-height: 80px;
   align-items: center;
+  padding: 25px 0;
 }
 .index .container {
   align-items: center;
@@ -121,9 +120,8 @@ header .mail {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  padding-top: 200px;
-  padding-bottom: 200px;
   justify-content: space-between;
+  padding-top: 75px;
 }
 
 header .agency,
@@ -156,6 +154,7 @@ nav .portfolio:focus {
 }
 .sec1{
   background-color: #2f303a;
+  height: 600px;
 }
 
 .sec1 .but {
@@ -169,6 +168,7 @@ nav .portfolio:focus {
   padding: 10px 41px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  align-items: center;
 }
 .section {
   padding-top: 94px;
@@ -177,7 +177,7 @@ nav .portfolio:focus {
 .sec2,
 .lorem {
   background-color: white;
-  padding: 10px;
+  padding: 40px;
   display: flex;
 }
 .section .but:hover {
@@ -242,6 +242,7 @@ img {
   background-color: #f5f4fa;
 }
 .list-images2 {
+  padding-bottom: 10px;
   display: flex;
   padding-left: 0;
   justify-content: space-between;
@@ -319,6 +320,8 @@ img {
   flex-wrap: wrap;
   padding-bottom: 20px;
   justify-content: space-between;
+  line-height: 36px;
+  letter-spacing: 0.03em;
 }
 
 .imagine1,
@@ -356,7 +359,8 @@ box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
   letter-spacing: 0.03em;
 }
 figcaption{
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 footer {
   background-color: var(--black);
